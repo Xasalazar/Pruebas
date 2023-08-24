@@ -79,13 +79,7 @@ export default {
       ></CloudUploader>
     </div>
   </LayoutInitial>
-  <div
-    v-show="isMobile"
-    :class="{
-      'submit-container-mobile': !boolBottom,
-      'submit-container-mobile-fixed': boolBottom,
-    }"
-  >
+  <div v-show="isMobile" class="submit-container-mobile">
     <button
       v-show="boolBottom"
       class="submit-button-prev"
@@ -137,13 +131,8 @@ export default {
   font-size: 16px;
 }
 .submit-container-mobile {
-  position: absolute;
+  position: fixed;
   bottom: 0;
-  width: 100%;
-  display: flex;
-}
-.submit-container-mobile-fixed {
-  position: absolute;
   width: 100%;
   display: flex;
 }
