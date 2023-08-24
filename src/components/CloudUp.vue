@@ -64,7 +64,12 @@
               :key="index"
               class="file-item"
             >
-              <svg viewBox="0 0 24 24" :width="30" :height="30">
+              <svg
+                class="icon-item"
+                viewBox="0 0 24 24"
+                :width="30"
+                :height="30"
+              >
                 <path :fill="iconcolor" :d="iconClass" />
               </svg>
               <p class="file-name">{{ file.name }}</p>
@@ -448,5 +453,10 @@ export default {
 
 .file-grid {
   width: 100%;
+}
+
+.icon-item {
+  overflow-clip-margin: content-box;
+  overflow: initial;
 }
 </style>
