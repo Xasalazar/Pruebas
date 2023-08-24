@@ -68,6 +68,7 @@ export default {
 <style>
 .width-mobile {
   width: 85% !important;
+  margin-bottom: 10% !important;
 }
 .title-info {
   color: var(--primary-color);
