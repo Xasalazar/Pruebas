@@ -191,6 +191,7 @@ export default {
         toast.error("No ha subido ningun archivo", {
           position: "bottom-right",
         });
+        loading.value = false;
         return;
       }
 
